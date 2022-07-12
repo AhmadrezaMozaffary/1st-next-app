@@ -1,0 +1,8 @@
+.detail {
+    text-align: center;
+}
+
+.detail img {
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+}
