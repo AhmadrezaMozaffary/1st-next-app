@@ -1,8 +1,8 @@
 import { MongoClient } from "mongodb";
 import MeetupList from "../components/meetups/MeetupList";
 
-const HomePage = ({ meetups }) => {
-  return <MeetupList meetups={meetups} />;
+const HomePage = (props) => {
+  return <MeetupList meetups={props.meetups} />;
 };
 
 export const getStaticProps = async () => {

@@ -14,7 +14,6 @@ const NewMeetup = () => {
     });
 
     const data = await res.json();
-
     router.push("/");
   };
 
