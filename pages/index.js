@@ -1,8 +1,20 @@
+import Head from "next/head";
 import { MongoClient } from "mongodb";
 import MeetupList from "../components/meetups/MeetupList";
 
 const HomePage = (props) => {
-  return <MeetupList meetups={props.meetups} />;
+  return (
+    <>
+      <Head>
+        <title>Next JS meetups</title>
+        <meta
+          name="description"
+          content="Ahmadreza Mozaffary's first NextJS application"
+        />
+      </Head>
+      <MeetupList meetups={props.meetups} />
+    </>
+  );
 };
 
 export const getStaticProps = async () => {
