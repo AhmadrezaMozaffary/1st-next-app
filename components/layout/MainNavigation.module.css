@@ -37,3 +37,18 @@
 .header a.active {
   color: white;
 }
+ 
+
+@media screen and (max-width: 600px) {
+  .logo{
+    font-size: 1.5rem;
+  }
+  .header li{
+    margin: 0 5px;
+  }
+  .header ul a {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+}
